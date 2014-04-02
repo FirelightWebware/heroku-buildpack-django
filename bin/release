@@ -24,7 +24,7 @@ PROJECT=$(dirname $SETTINGS_FILE)
 cat <<EOF
 
 addons:
-  - shared-database:5mb
+  heroku-postgresql:hobby-dev
 
 default_process_types:
   web:      python $PROJECT/manage.py runserver 0.0.0.0:\$PORT --noreload
